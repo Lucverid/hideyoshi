@@ -1,9 +1,8 @@
-
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #074a74;
-  color: white;
+  background-color: white; /* LATAR PUTIH */
+  color: #074a74;
   text-align: center;
 }
 
@@ -20,15 +19,19 @@ body {
 
 h1 {
   margin-bottom: 30px;
-  font-size: 22px;
+  font-size: 17px;
+  color: #074a74;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
-  color: #074a74;
+  background-color: #074a74; /* TOMBOL BIRU */
+  color: white;              /* TEKS PUTIH */
   text-decoration: none;
   margin: 10px 0;
   padding: 15px 25px;
@@ -43,11 +46,11 @@ h1 {
 }
 
 .btn:hover {
-  background-color: #e0e0e0;
+  background-color: #053a5d; /* Biru lebih gelap saat hover */
 }
 
 .footer {
   margin-top: 40px;
   font-size: 12px;
-  color: #cccccc;
+  color: #666666;
 }
