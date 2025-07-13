@@ -1,7 +1,7 @@
-.body {
+body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-image: url(https://images.app.goo.gl/k6nv9pah5y6Hh6Zd9); /* Ganti sesuai preferensi */
+  background-image: url('https://i.ibb.co/kJZtRjZ/japan-bg.jpg'); /* Ganti ke gambar lain jika mau */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -11,12 +11,11 @@
 .container {
   padding: 24px;
   max-width: 700px;
-  margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.9); /* semi transparan biar konten tetap terbaca */
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 20px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
-
 
 .header {
   text-align: center;
@@ -24,7 +23,9 @@
 }
 
 .logo {
-  width: 80px;
+  width: 140px;
+  max-width: 100%;
+  height: auto;
   margin-bottom: 10px;
 }
 
@@ -35,10 +36,10 @@ h1 {
 }
 
 .btn {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px; /* Jarak antara ikon dan teks */
   background-color: #074a74;
   color: white;
   text-decoration: none;
@@ -47,10 +48,13 @@ h1 {
   border-radius: 40px;
   font-weight: bold;
   font-size: 15px;
+  overflow: hidden;
   transition: background 0.3s;
 }
 
 .btn i {
+  position: absolute;
+  left: 20px;
   width: 32px;
   height: 32px;
   font-size: 16px;
@@ -62,6 +66,10 @@ h1 {
   color: white;
 }
 
+.btn:hover {
+  background-color: #053a5d;
+}
+
 .footer {
   margin-top: 40px;
   font-size: 12px;
@@ -69,10 +77,10 @@ h1 {
   text-align: center;
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 400px) {
   .logo {
-    width: 60px;
+    width: 100px;
   }
 
   h1 {
@@ -80,8 +88,8 @@ h1 {
   }
 
   .btn {
-    padding: 12px 12px 12px 55px;
     font-size: 14px;
+    padding: 12px 16px;
   }
 
   .btn i {
