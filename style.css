@@ -23,7 +23,7 @@ body {
 
 h1 {
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
   color: #074a74;
 }
 
@@ -34,7 +34,7 @@ h1 {
   color: white;
   text-decoration: none;
   margin: 10px 0;
-  padding: 12px 16px 12px 50px;
+  padding: 12px 17px 12px 60px; /* Tambah jarak kiri aga tidak terlalu nempel icon */
   border-radius: 40px;
   font-weight: bold;
   position: relative;
@@ -45,15 +45,16 @@ h1 {
 
 .btn i {
   position: absolute;
-  left: 14px;
+  left: 30px; /* Icon tidak terlalu ke kiri */
+  width: 32px;
+  height: 32px;
   font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
-  /* Hapus background bulat */
-  background: none;
-  width: auto;
-  height: auto;
-  border-radius: 0;
-  padding: 0;
 }
 
 .btn:hover {
@@ -70,7 +71,7 @@ h1 {
 /* Responsive adjustments */
 @media (max-width: 400px) {
   .logo {
-    width: 60px;
+    width: 100px;
   }
 
   h1 {
@@ -78,12 +79,14 @@ h1 {
   }
 
   .btn {
-    padding: 12px 12px 12px 46px;
+    padding: 12px 12px 12px 55px;
     font-size: 14px;
   }
 
   .btn i {
-    left: 12px;
+    left: 14px;
+    width: 28px;
+    height: 28px;
     font-size: 14px;
   }
 }
