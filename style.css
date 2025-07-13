@@ -9,6 +9,18 @@ body {
   min-height: 100vh;
 }
 
+.sakura {
+  position: fixed;
+  top: -50px;
+  z-index: 999;
+  color: pink;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  pointer-events: none; /* Tambahan ini penting */
+}
+
+
 .container {
   padding: 24px;
   max-width: 700px;

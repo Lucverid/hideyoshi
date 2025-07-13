@@ -19,6 +19,19 @@
     audio.muted = false;
     audio.play();
   }, { once: true });
+
+ const totalSakura = 30;
+
+  for (let i = 0; i < totalSakura; i++) {
+    const sakura = document.createElement('div');
+    sakura.classList.add('sakura');
+    sakura.innerHTML = '🍁'; // Tambahan ini
+    sakura.style.left = `${Math.random() * 100}vw`;
+    sakura.style.animationDuration = `${5 + Math.random() * 5}s`;
+    sakura.style.opacity = Math.random();
+    sakura.style.fontSize = `${12 + Math.random() * 24}px`;
+    document.body.appendChild(sakura);
+  }
 </script>
 
   <div class="container">
