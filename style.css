@@ -13,12 +13,22 @@ body {
   position: fixed;
   top: -50px;
   z-index: 999;
-  color: pink;
+  color: orange;
   animation-name: fall;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  pointer-events: none; /* Tambahan ini penting */
+  pointer-events: none;
 }
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) translateX(30px) rotate(360deg);
+  }
+}
+
 
 
 .container {
