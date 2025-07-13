@@ -1,7 +1,8 @@
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: white; /* LATAR PUTIH */
+  background-color: white;
   color: #074a74;
   text-align: center;
 }
@@ -13,13 +14,13 @@ body {
 }
 
 .logo {
-  width: 100px;
-  margin-bottom: 15px;
+  width: 150px;
+  margin-bottom: 20px;
 }
 
 h1 {
   margin-bottom: 30px;
-  font-size: 17px;
+  font-size: 16px;
   color: #074a74;
   white-space: nowrap;
   overflow: hidden;
@@ -30,8 +31,8 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #074a74; /* TOMBOL BIRU */
-  color: white;              /* TEKS PUTIH */
+  background-color: #074a74;
+  color: white;
   text-decoration: none;
   margin: 10px 0;
   padding: 15px 25px;
@@ -46,11 +47,22 @@ h1 {
 }
 
 .btn:hover {
-  background-color: #053a5d; /* Biru lebih gelap saat hover */
+  background-color: #053a5d;
 }
 
 .footer {
   margin-top: 40px;
   font-size: 12px;
   color: #666666;
+}
+
+/* Responsive logo for smaller devices */
+@media (max-width: 400px) {
+  .logo {
+    width: 110px;
+  }
+
+  h1 {
+    font-size: 14px;
+  }
 }
